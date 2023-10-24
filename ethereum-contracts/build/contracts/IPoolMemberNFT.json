@@ -1,0 +1,75 @@
+{
+  "contractName": "IPoolMemberNFT",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/superfluid/IPoolMemberNFT.sol\":\"IPoolMemberNFT\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/superfluid/IPoolMemberNFT.sol\":{\"keccak256\":\"0x1961a8579193d3a9cdceee56c4e8a1a888869eaac1b2ca3594616c67a25d45c8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f55802e18a32f9f46958fbf5ffdf6ed8654e063e545488110bb455020b4eda69\",\"dweb:/ipfs/QmNehJdVBqEssEdFL6jTmHtfvEVCUanHyiVQEJBC4rnuUD\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.4;\n\ninterface IPoolMemberNFT {}",
+  "sourcePath": "/home/runner/work/protocol-monorepo/protocol-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/IPoolMemberNFT.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/superfluid/IPoolMemberNFT.sol",
+    "exportedSymbols": {
+      "IPoolMemberNFT": [
+        23766
+      ]
+    },
+    "id": 23767,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 23765,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:50"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPoolMemberNFT",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "id": 23766,
+        "linearizedBaseContracts": [
+          23766
+        ],
+        "name": "IPoolMemberNFT",
+        "nameLocation": "68:14:50",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 23767,
+        "src": "58:27:50",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:53:50"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.13",
+  "updatedAt": "2023-06-28T07:35:59.760Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "contractName": "IPoolAdminNFT",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/superfluid/IPoolAdminNFT.sol\":\"IPoolAdminNFT\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/superfluid/IPoolAdminNFT.sol\":{\"keccak256\":\"0x4dc5784dc8c21fa4ed393add91ced5853e3f95222467b03dbaa79e60eb7cc193\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2e8580acc481e6cc15425898d64c63fc2a348248b01543a3db8b4ad75ef57a98\",\"dweb:/ipfs/QmYDRy7fvrnHHRW5m7u9CZJrKEKEXXxAJ7ZR5JG8fwa5GG\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.4;\n\ninterface IPoolAdminNFT {}",
+  "sourcePath": "/home/runner/work/protocol-monorepo/protocol-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/IPoolAdminNFT.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/superfluid/IPoolAdminNFT.sol",
+    "exportedSymbols": {
+      "IPoolAdminNFT": [
+        23763
+      ]
+    },
+    "id": 23764,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 23762,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:49"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPoolAdminNFT",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "id": 23763,
+        "linearizedBaseContracts": [
+          23763
+        ],
+        "name": "IPoolAdminNFT",
+        "nameLocation": "68:13:49",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 23764,
+        "src": "58:26:49",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:52:49"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.13",
+  "updatedAt": "2023-06-28T07:35:59.760Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

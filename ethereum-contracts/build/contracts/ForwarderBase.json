@@ -1,0 +1,1405 @@
+{
+  "contractName": "ForwarderBase",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/utils/ForwarderBase.sol\":\"ForwarderBase\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xab28a56179c1db258c9bf5235b382698cb650debecb51b23d12be9e241374b68\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://daae589a9d6fa7e55f99f86c0a16796ca490f243fb3693632c3711c0646c1d56\",\"dweb:/ipfs/QmR3zpd7wNw3rcUdekwiv6FYHJqksuTCXLVioTxu6Fbxk3\"]},\"@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0x75b829ff2f26c14355d1cba20e16fe7b29ca58eb5fef665ede48bc0f9c6c74b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a0a107160525724f9e1bbbab031defc2f298296dd9e331f16a6f7130cec32146\",\"dweb:/ipfs/QmemujxSd7gX8A9M8UwmNbz4Ms3U9FG9QfudUgxwvTmPWf\"]},\"@openzeppelin/contracts/token/ERC777/IERC777.sol\":{\"keccak256\":\"0x385a7061f1436b079d44c140dee9387d5313e94874ff9ee877dc0085c981ac3d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c3fe22bb0d9527356e11f267f9187134de4d4ed1ff77468b4d73e3238697b96\",\"dweb:/ipfs/Qmc8caJctgxbzXEpxRogQMR2bnBk5U67hA7kKbUEG2PUXV\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"project:/contracts/interfaces/superfluid/Definitions.sol\":{\"keccak256\":\"0x2e5be80a58134c213a5fb4da40797c616a0c73cf807d5d0c49b28c5c5047a5f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2f29b92234d646c801b9c5f2628742c9679f58ae9090b1bf346cfca3eddec8fb\",\"dweb:/ipfs/QmcK7zX8ugFViAM7h7xVQiZzYifH5NZbBRQSy1Yr9bfeA9\"]},\"project:/contracts/interfaces/superfluid/IConstantInflowNFT.sol\":{\"keccak256\":\"0x6c45e56bafabb2d0b61be9c9b5c40ce16f06537b7f7d695115ba995d8e384c7d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c5bec860e391e693171417377bf386fe70fe09a27063fc1499b2c6776d140a52\",\"dweb:/ipfs/QmeYq64k3gZRkpJyRKquxqdNWFrwy2tWHBiXSHNGMjaMNA\"]},\"project:/contracts/interfaces/superfluid/IConstantOutflowNFT.sol\":{\"keccak256\":\"0x2df65c6d6e74ba92a267176b1f1661416a6d54cf56bebbdea85fccadfe6d446e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://113dab47ce7e686fbddbeadd58183fea3839f5882261a285b4141b558838528a\",\"dweb:/ipfs/QmY6pVPzSSwR2Bu3YCxHv7Fyfwx8VJcBBjYRSfDi4e7LbV\"]},\"project:/contracts/interfaces/superfluid/IFlowNFTBase.sol\":{\"keccak256\":\"0xbdcda11e5c157e63da15d7aced71fa20858472e3d5d5dba158690109d4abdfab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://02277add66a1b52361fbfa8d1f8a502abfdeeb860f41458bcee731a3b9447456\",\"dweb:/ipfs/QmYnPVWYfCtBc359gu36sF4tMETQS1DDztgJ9hmSZtxMDP\"]},\"project:/contracts/interfaces/superfluid/IPoolAdminNFT.sol\":{\"keccak256\":\"0x4dc5784dc8c21fa4ed393add91ced5853e3f95222467b03dbaa79e60eb7cc193\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2e8580acc481e6cc15425898d64c63fc2a348248b01543a3db8b4ad75ef57a98\",\"dweb:/ipfs/QmYDRy7fvrnHHRW5m7u9CZJrKEKEXXxAJ7ZR5JG8fwa5GG\"]},\"project:/contracts/interfaces/superfluid/IPoolMemberNFT.sol\":{\"keccak256\":\"0x1961a8579193d3a9cdceee56c4e8a1a888869eaac1b2ca3594616c67a25d45c8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f55802e18a32f9f46958fbf5ffdf6ed8654e063e545488110bb455020b4eda69\",\"dweb:/ipfs/QmNehJdVBqEssEdFL6jTmHtfvEVCUanHyiVQEJBC4rnuUD\"]},\"project:/contracts/interfaces/superfluid/ISuperAgreement.sol\":{\"keccak256\":\"0xb3701155641cb42103b206e66dcdc82c286f554189f9c9715b7146c0f1b6fbdc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8345c2c3fbc825eb133f05440665530569d5bd59acb8e1fcdea53593e9c7d49b\",\"dweb:/ipfs/QmXNRYfqWDm8TofsoRw38GVa2LWzvPsGkF1H8Ro5E22CP7\"]},\"project:/contracts/interfaces/superfluid/ISuperApp.sol\":{\"keccak256\":\"0xf1d91553023a7a2db8da3352753fc59645aa4339643e02264b9c1868eb632f5e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4c80058a66407690e98e40cd454a9cb46f695e948604f024e38f6b2b61626555\",\"dweb:/ipfs/QmTVwCQmh4GBS4K9r3RYk8zpLfzGtmeWfYRdAfMmu7htP7\"]},\"project:/contracts/interfaces/superfluid/ISuperToken.sol\":{\"keccak256\":\"0xb8cfa2d1f1a9de1495102bac583a819a0bc746031e157d0f5fa4103d6ebe4179\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7e229ecfd55d9fd21ea3d4e58e49ffe0c47c862d6b17cdf552ad6d39a6379443\",\"dweb:/ipfs/QmaPY4Fg2uCNoeF99tnTcEfYdwQWBLp87WPmez37KDGiTW\"]},\"project:/contracts/interfaces/superfluid/ISuperTokenFactory.sol\":{\"keccak256\":\"0x650695c87473f47c36ba57eecf57b42faa9eab3dd0be828aa0be5aeabf1f15db\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3aea8086ef10750f92d133cc65becd0b51e51add441435819a58d81f9d482f55\",\"dweb:/ipfs/QmRZKfHxgg9aEWDzsnd326Bpq2bpCZM4zM86NRkcW1Lu4x\"]},\"project:/contracts/interfaces/superfluid/ISuperfluid.sol\":{\"keccak256\":\"0x60b8207b8d0bd42b66decf0def9e8ebc032ec3e1d44b348979afc6066428effc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b459c2e6d2637506bcbc159c422520ebd22a31646283909fb173e0da0f6e9489\",\"dweb:/ipfs/QmZ6PNM8jFgh6aXR9ULdXkFABMsMXQrHrtF4fZKsBPVQzu\"]},\"project:/contracts/interfaces/superfluid/ISuperfluidGovernance.sol\":{\"keccak256\":\"0x63eb98b650214aff1979f13bb9b503425d0c2d7500a3f210930fe3057695df70\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://83603f4cbad24656818345a08965b8402a5b38ad1d9382077727e8154774f66f\",\"dweb:/ipfs/QmVqdmcwma6FCmJ8eKPm761o1PPWhPMW1yauLVLpXMiwpt\"]},\"project:/contracts/interfaces/superfluid/ISuperfluidToken.sol\":{\"keccak256\":\"0xa68065a8a4da8cb3755364b714b2636861a22a268f8dd82a1be7b4686a1d02fe\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://deff30448cfeecc0ac555e35d6bd5d47acaffa9b2199e9f6b0dd0a01b2fbe4ed\",\"dweb:/ipfs/QmayyxRBkgBT3yCCsQ96TAmFcrHVufqTGVnuNjLGy2Cva8\"]},\"project:/contracts/interfaces/tokens/ERC20WithTokenInfo.sol\":{\"keccak256\":\"0xea22c0295f28a5e4124cc54a5324d9d9f018f322df644ab5e2b332bbf23ada74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2ca09ea1f6c2f14ba1d59c75946d12563e01bee00dfdb18461b68117d120aea4\",\"dweb:/ipfs/QmUFN1W5kfi57Ae2F74o42HFe3WrUZr5gc7rmQHujMjQVE\"]},\"project:/contracts/interfaces/tokens/TokenInfo.sol\":{\"keccak256\":\"0x873a19fc42452483280191324109a527e0b0a1c200dab28aa85dff4ad0a7d0c0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://838778521d9036ef0005ff0cd969a095f1b5535dba9518051a190cf21693a2d9\",\"dweb:/ipfs/Qmd2eZ1ENtiiyiua97kyzWyUUn4hZvUqCHNMeAc6umxP2D\"]},\"project:/contracts/libs/CallUtils.sol\":{\"keccak256\":\"0x9bf4c3250a0d7439a6181322fd1eec50bd89d926b8000ab44041c4a5f80326f1\",\"license\":\"AGPLv3\",\"urls\":[\"bzz-raw://25f82bdee34b7a772cd8bef8784d1eac2be446b57b2170aa745aae672212626d\",\"dweb:/ipfs/QmXVtqbBGEqtrprbhZHGKordVQoHtYzCw7Q9S4vW6mPssy\"]},\"project:/contracts/utils/ForwarderBase.sol\":{\"keccak256\":\"0x7dd9de2456b709bf5d6ec03e004dc1037643cea8c6ee1ecad2ac052310b83b11\",\"license\":\"AGPLv3\",\"urls\":[\"bzz-raw://459522368edb5ca4d34e642192bf6b4fdfaf3c8dcaf7c23f118bb8f18ad33c7b\",\"dweb:/ipfs/QmPwGJV4qT9jwPTh2wLhrXgqSB7fdCPPU62fthif79SXXw\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: AGPLv3\npragma solidity 0.8.19;\n\nimport { BatchOperation, ISuperfluid } from \"../interfaces/superfluid/ISuperfluid.sol\";\nimport { CallUtils } from \"../libs/CallUtils.sol\";\n\nabstract contract ForwarderBase {\n    ISuperfluid internal immutable _host;\n\n    constructor(ISuperfluid host) {\n        _host = host;\n    }\n\n    // compiles the calldata of a single operation for the host invocation and executes it\n    function _forwardBatchCall(address target, bytes memory callData, bytes memory userData) internal returns (bool) {\n        ISuperfluid.Operation[] memory ops = new ISuperfluid.Operation[](1);\n        ops[0] = ISuperfluid.Operation(\n            BatchOperation.OPERATION_TYPE_SUPERFLUID_CALL_AGREEMENT, // type\n            address(target), // target\n            abi.encode( // data\n            callData, userData)\n        );\n\n        bytes memory fwBatchCallData = abi.encodeCall(_host.forwardBatchCall, (ops));\n\n        // https://eips.ethereum.org/EIPS/eip-2771\n        // we encode the msg.sender as the last 20 bytes per EIP-2771 to extract the original txn signer later on\n        // solhint-disable-next-line avoid-low-level-calls\n        (bool success, bytes memory returnedData) = address(_host).call(abi.encodePacked(fwBatchCallData, msg.sender));\n\n        if (!success) {\n            CallUtils.revertFromReturnedData(returnedData);\n        }\n\n        return true;\n    }\n}\n",
+  "sourcePath": "/home/runner/work/protocol-monorepo/protocol-monorepo/packages/ethereum-contracts/contracts/utils/ForwarderBase.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/utils/ForwarderBase.sol",
+    "exportedSymbols": {
+      "BatchOperation": [
+        23506
+      ],
+      "CallUtils": [
+        25774
+      ],
+      "ForwarderBase": [
+        48109
+      ],
+      "ISuperfluid": [
+        25037
+      ]
+    },
+    "id": 48110,
+    "license": "AGPLv3",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 48006,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:23:113"
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/superfluid/ISuperfluid.sol",
+        "file": "../interfaces/superfluid/ISuperfluid.sol",
+        "id": 48009,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 48110,
+        "sourceUnit": 25038,
+        "src": "60:87:113",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 48007,
+              "name": "BatchOperation",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 23506,
+              "src": "69:14:113",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 48008,
+              "name": "ISuperfluid",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 25037,
+              "src": "85:11:113",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/libs/CallUtils.sol",
+        "file": "../libs/CallUtils.sol",
+        "id": 48011,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 48110,
+        "sourceUnit": 25775,
+        "src": "148:50:113",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 48010,
+              "name": "CallUtils",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 25774,
+              "src": "157:9:113",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "ForwarderBase",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 48109,
+        "linearizedBaseContracts": [
+          48109
+        ],
+        "name": "ForwarderBase",
+        "nameLocation": "218:13:113",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 48014,
+            "mutability": "immutable",
+            "name": "_host",
+            "nameLocation": "269:5:113",
+            "nodeType": "VariableDeclaration",
+            "scope": 48109,
+            "src": "238:36:113",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+              "typeString": "contract ISuperfluid"
+            },
+            "typeName": {
+              "id": 48013,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 48012,
+                "name": "ISuperfluid",
+                "nameLocations": [
+                  "238:11:113"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 25037,
+                "src": "238:11:113"
+              },
+              "referencedDeclaration": 25037,
+              "src": "238:11:113",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+                "typeString": "contract ISuperfluid"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 48024,
+              "nodeType": "Block",
+              "src": "311:29:113",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 48022,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 48020,
+                      "name": "_host",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48014,
+                      "src": "321:5:113",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+                        "typeString": "contract ISuperfluid"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 48021,
+                      "name": "host",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48017,
+                      "src": "329:4:113",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+                        "typeString": "contract ISuperfluid"
+                      }
+                    },
+                    "src": "321:12:113",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "id": 48023,
+                  "nodeType": "ExpressionStatement",
+                  "src": "321:12:113"
+                }
+              ]
+            },
+            "id": 48025,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 48018,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48017,
+                  "mutability": "mutable",
+                  "name": "host",
+                  "nameLocation": "305:4:113",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48025,
+                  "src": "293:16:113",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+                    "typeString": "contract ISuperfluid"
+                  },
+                  "typeName": {
+                    "id": 48016,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 48015,
+                      "name": "ISuperfluid",
+                      "nameLocations": [
+                        "293:11:113"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 25037,
+                      "src": "293:11:113"
+                    },
+                    "referencedDeclaration": 25037,
+                    "src": "293:11:113",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+                      "typeString": "contract ISuperfluid"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "292:18:113"
+            },
+            "returnParameters": {
+              "id": 48019,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "311:0:113"
+            },
+            "scope": 48109,
+            "src": "281:59:113",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 48107,
+              "nodeType": "Block",
+              "src": "550:864:113",
+              "statements": [
+                {
+                  "assignments": [
+                    48041
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 48041,
+                      "mutability": "mutable",
+                      "name": "ops",
+                      "nameLocation": "591:3:113",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 48107,
+                      "src": "560:34:113",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_Operation_$25020_memory_ptr_$dyn_memory_ptr",
+                        "typeString": "struct ISuperfluid.Operation[]"
+                      },
+                      "typeName": {
+                        "baseType": {
+                          "id": 48039,
+                          "nodeType": "UserDefinedTypeName",
+                          "pathNode": {
+                            "id": 48038,
+                            "name": "ISuperfluid.Operation",
+                            "nameLocations": [
+                              "560:11:113",
+                              "572:9:113"
+                            ],
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 25020,
+                            "src": "560:21:113"
+                          },
+                          "referencedDeclaration": 25020,
+                          "src": "560:21:113",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Operation_$25020_storage_ptr",
+                            "typeString": "struct ISuperfluid.Operation"
+                          }
+                        },
+                        "id": 48040,
+                        "nodeType": "ArrayTypeName",
+                        "src": "560:23:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Operation_$25020_storage_$dyn_storage_ptr",
+                          "typeString": "struct ISuperfluid.Operation[]"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 48048,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "hexValue": "31",
+                        "id": 48046,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "625:1:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "id": 48045,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "597:27:113",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_struct$_Operation_$25020_memory_ptr_$dyn_memory_ptr_$",
+                        "typeString": "function (uint256) pure returns (struct ISuperfluid.Operation memory[] memory)"
+                      },
+                      "typeName": {
+                        "baseType": {
+                          "id": 48043,
+                          "nodeType": "UserDefinedTypeName",
+                          "pathNode": {
+                            "id": 48042,
+                            "name": "ISuperfluid.Operation",
+                            "nameLocations": [
+                              "601:11:113",
+                              "613:9:113"
+                            ],
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 25020,
+                            "src": "601:21:113"
+                          },
+                          "referencedDeclaration": 25020,
+                          "src": "601:21:113",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Operation_$25020_storage_ptr",
+                            "typeString": "struct ISuperfluid.Operation"
+                          }
+                        },
+                        "id": 48044,
+                        "nodeType": "ArrayTypeName",
+                        "src": "601:23:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Operation_$25020_storage_$dyn_storage_ptr",
+                          "typeString": "struct ISuperfluid.Operation[]"
+                        }
+                      }
+                    },
+                    "id": 48047,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "597:30:113",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Operation_$25020_memory_ptr_$dyn_memory_ptr",
+                      "typeString": "struct ISuperfluid.Operation memory[] memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "560:67:113"
+                },
+                {
+                  "expression": {
+                    "id": 48066,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 48049,
+                        "name": "ops",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 48041,
+                        "src": "637:3:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Operation_$25020_memory_ptr_$dyn_memory_ptr",
+                          "typeString": "struct ISuperfluid.Operation memory[] memory"
+                        }
+                      },
+                      "id": 48051,
+                      "indexExpression": {
+                        "hexValue": "30",
+                        "id": 48050,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "641:1:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "637:6:113",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Operation_$25020_memory_ptr",
+                        "typeString": "struct ISuperfluid.Operation memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "expression": {
+                            "id": 48054,
+                            "name": "BatchOperation",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 23506,
+                            "src": "681:14:113",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_BatchOperation_$23506_$",
+                              "typeString": "type(library BatchOperation)"
+                            }
+                          },
+                          "id": 48055,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberLocation": "696:40:113",
+                          "memberName": "OPERATION_TYPE_SUPERFLUID_CALL_AGREEMENT",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 23499,
+                          "src": "681:55:113",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "id": 48058,
+                              "name": "target",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 48027,
+                              "src": "766:6:113",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "id": 48057,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "758:7:113",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 48056,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "758:7:113",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 48059,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "758:15:113",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "id": 48062,
+                              "name": "callData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 48029,
+                              "src": "829:8:113",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            },
+                            {
+                              "id": 48063,
+                              "name": "userData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 48031,
+                              "src": "839:8:113",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              },
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "expression": {
+                              "id": 48060,
+                              "name": "abi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 4294967295,
+                              "src": "797:3:113",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_abi",
+                                "typeString": "abi"
+                              }
+                            },
+                            "id": 48061,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberLocation": "801:6:113",
+                            "memberName": "encode",
+                            "nodeType": "MemberAccess",
+                            "src": "797:10:113",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
+                              "typeString": "function () pure returns (bytes memory)"
+                            }
+                          },
+                          "id": 48064,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "797:51:113",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          },
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        ],
+                        "expression": {
+                          "id": 48052,
+                          "name": "ISuperfluid",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 25037,
+                          "src": "646:11:113",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_ISuperfluid_$25037_$",
+                            "typeString": "type(contract ISuperfluid)"
+                          }
+                        },
+                        "id": 48053,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "658:9:113",
+                        "memberName": "Operation",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 25020,
+                        "src": "646:21:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Operation_$25020_storage_ptr_$",
+                          "typeString": "type(struct ISuperfluid.Operation storage pointer)"
+                        }
+                      },
+                      "id": 48065,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "646:212:113",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Operation_$25020_memory_ptr",
+                        "typeString": "struct ISuperfluid.Operation memory"
+                      }
+                    },
+                    "src": "637:221:113",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Operation_$25020_memory_ptr",
+                      "typeString": "struct ISuperfluid.Operation memory"
+                    }
+                  },
+                  "id": 48067,
+                  "nodeType": "ExpressionStatement",
+                  "src": "637:221:113"
+                },
+                {
+                  "assignments": [
+                    48069
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 48069,
+                      "mutability": "mutable",
+                      "name": "fwBatchCallData",
+                      "nameLocation": "882:15:113",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 48107,
+                      "src": "869:28:113",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_memory_ptr",
+                        "typeString": "bytes"
+                      },
+                      "typeName": {
+                        "id": 48068,
+                        "name": "bytes",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "869:5:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_storage_ptr",
+                          "typeString": "bytes"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 48077,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 48072,
+                          "name": "_host",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 48014,
+                          "src": "915:5:113",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+                            "typeString": "contract ISuperfluid"
+                          }
+                        },
+                        "id": 48073,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "921:16:113",
+                        "memberName": "forwardBatchCall",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 25036,
+                        "src": "915:22:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_nonpayable$_t_array$_t_struct$_Operation_$25020_memory_ptr_$dyn_memory_ptr_$returns$__$",
+                          "typeString": "function (struct ISuperfluid.Operation memory[] memory) external"
+                        }
+                      },
+                      {
+                        "components": [
+                          {
+                            "id": 48074,
+                            "name": "ops",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 48041,
+                            "src": "940:3:113",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_array$_t_struct$_Operation_$25020_memory_ptr_$dyn_memory_ptr",
+                              "typeString": "struct ISuperfluid.Operation memory[] memory"
+                            }
+                          }
+                        ],
+                        "id": 48075,
+                        "isConstant": false,
+                        "isInlineArray": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "TupleExpression",
+                        "src": "939:5:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Operation_$25020_memory_ptr_$dyn_memory_ptr",
+                          "typeString": "struct ISuperfluid.Operation memory[] memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_function_external_nonpayable$_t_array$_t_struct$_Operation_$25020_memory_ptr_$dyn_memory_ptr_$returns$__$",
+                          "typeString": "function (struct ISuperfluid.Operation memory[] memory) external"
+                        },
+                        {
+                          "typeIdentifier": "t_array$_t_struct$_Operation_$25020_memory_ptr_$dyn_memory_ptr",
+                          "typeString": "struct ISuperfluid.Operation memory[] memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 48070,
+                        "name": "abi",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4294967295,
+                        "src": "900:3:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_abi",
+                          "typeString": "abi"
+                        }
+                      },
+                      "id": 48071,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberLocation": "904:10:113",
+                      "memberName": "encodeCall",
+                      "nodeType": "MemberAccess",
+                      "src": "900:14:113",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_abiencodecall_pure$__$returns$_t_bytes_memory_ptr_$",
+                        "typeString": "function () pure returns (bytes memory)"
+                      }
+                    },
+                    "id": 48076,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "900:45:113",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory_ptr",
+                      "typeString": "bytes memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "869:76:113"
+                },
+                {
+                  "assignments": [
+                    48079,
+                    48081
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 48079,
+                      "mutability": "mutable",
+                      "name": "success",
+                      "nameLocation": "1186:7:113",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 48107,
+                      "src": "1181:12:113",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 48078,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1181:4:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 48081,
+                      "mutability": "mutable",
+                      "name": "returnedData",
+                      "nameLocation": "1208:12:113",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 48107,
+                      "src": "1195:25:113",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_memory_ptr",
+                        "typeString": "bytes"
+                      },
+                      "typeName": {
+                        "id": 48080,
+                        "name": "bytes",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1195:5:113",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_storage_ptr",
+                          "typeString": "bytes"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 48094,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 48089,
+                            "name": "fwBatchCallData",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 48069,
+                            "src": "1261:15:113",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            }
+                          },
+                          {
+                            "expression": {
+                              "id": 48090,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 4294967281,
+                              "src": "1278:3:113",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 48091,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "1282:6:113",
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "src": "1278:10:113",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_bytes_memory_ptr",
+                              "typeString": "bytes memory"
+                            },
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "expression": {
+                            "id": 48087,
+                            "name": "abi",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4294967295,
+                            "src": "1244:3:113",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_abi",
+                              "typeString": "abi"
+                            }
+                          },
+                          "id": 48088,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberLocation": "1248:12:113",
+                          "memberName": "encodePacked",
+                          "nodeType": "MemberAccess",
+                          "src": "1244:16:113",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                            "typeString": "function () pure returns (bytes memory)"
+                          }
+                        },
+                        "id": 48092,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1244:45:113",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 48084,
+                            "name": "_host",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 48014,
+                            "src": "1232:5:113",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+                              "typeString": "contract ISuperfluid"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_ISuperfluid_$25037",
+                              "typeString": "contract ISuperfluid"
+                            }
+                          ],
+                          "id": 48083,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1224:7:113",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 48082,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1224:7:113",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 48085,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1224:14:113",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 48086,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1239:4:113",
+                      "memberName": "call",
+                      "nodeType": "MemberAccess",
+                      "src": "1224:19:113",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_barecall_payable$_t_bytes_memory_ptr_$returns$_t_bool_$_t_bytes_memory_ptr_$",
+                        "typeString": "function (bytes memory) payable returns (bool,bytes memory)"
+                      }
+                    },
+                    "id": 48093,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1224:66:113",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_bool_$_t_bytes_memory_ptr_$",
+                      "typeString": "tuple(bool,bytes memory)"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1180:110:113"
+                },
+                {
+                  "condition": {
+                    "id": 48096,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "!",
+                    "prefix": true,
+                    "src": "1305:8:113",
+                    "subExpression": {
+                      "id": 48095,
+                      "name": "success",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48079,
+                      "src": "1306:7:113",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 48104,
+                  "nodeType": "IfStatement",
+                  "src": "1301:85:113",
+                  "trueBody": {
+                    "id": 48103,
+                    "nodeType": "Block",
+                    "src": "1315:71:113",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "id": 48100,
+                              "name": "returnedData",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 48081,
+                              "src": "1362:12:113",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "expression": {
+                              "id": 48097,
+                              "name": "CallUtils",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 25774,
+                              "src": "1329:9:113",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_CallUtils_$25774_$",
+                                "typeString": "type(library CallUtils)"
+                              }
+                            },
+                            "id": 48099,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "1339:22:113",
+                            "memberName": "revertFromReturnedData",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 25687,
+                            "src": "1329:32:113",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$__$",
+                              "typeString": "function (bytes memory) pure"
+                            }
+                          },
+                          "id": 48101,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1329:46:113",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 48102,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1329:46:113"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "hexValue": "74727565",
+                    "id": 48105,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1403:4:113",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 48035,
+                  "id": 48106,
+                  "nodeType": "Return",
+                  "src": "1396:11:113"
+                }
+              ]
+            },
+            "id": 48108,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_forwardBatchCall",
+            "nameLocation": "446:17:113",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 48032,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48027,
+                  "mutability": "mutable",
+                  "name": "target",
+                  "nameLocation": "472:6:113",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48108,
+                  "src": "464:14:113",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 48026,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:7:113",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48029,
+                  "mutability": "mutable",
+                  "name": "callData",
+                  "nameLocation": "493:8:113",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48108,
+                  "src": "480:21:113",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 48028,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "480:5:113",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48031,
+                  "mutability": "mutable",
+                  "name": "userData",
+                  "nameLocation": "516:8:113",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48108,
+                  "src": "503:21:113",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 48030,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "503:5:113",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "463:62:113"
+            },
+            "returnParameters": {
+              "id": 48035,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48034,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48108,
+                  "src": "544:4:113",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 48033,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "544:4:113",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "543:6:113"
+            },
+            "scope": 48109,
+            "src": "437:977:113",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 48110,
+        "src": "200:1216:113",
+        "usedErrors": []
+      }
+    ],
+    "src": "35:1382:113"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.13",
+  "updatedAt": "2023-06-28T07:36:00.431Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

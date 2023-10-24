@@ -1,0 +1,46 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISuperfluidToken",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "int96",
+        "name": "flowRateDelta",
+        "type": "int96"
+      },
+      {
+        "internalType": "int256",
+        "name": "depositDelta",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "owedDepositDelta",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentTimestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "_updateAccountFlowState",
+    "outputs": [
+      {
+        "internalType": "int96",
+        "name": "newNetFlowRate",
+        "type": "int96"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]  
